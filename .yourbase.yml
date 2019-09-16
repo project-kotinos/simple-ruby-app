@@ -1,13 +1,15 @@
 dependencies:
   build:
-    - ruby:2.4.5
+    - ruby:2.6.0
 
 build_targets:
   - name: default
     commands:
+      - gem update --system
       - gem install bundler
       - bundle install 
-      - bundle exec rake
+      - bundle exec rake --trace spec
+
   - name: release
     commands:
       - echo "RELEASE"

@@ -1,6 +1,7 @@
 require 'simplecov'
-require 'rspec'
-require 'rspec/mocks'
+#require 'rspec'
+#require 'rspec/mocks'
+require 'yourbase/rspec/skipper'
 
 SimpleCov.start do
   add_filter "/spec/"
