@@ -5,6 +5,8 @@ dependencies:
 build_targets:
   - name: default
     commands:
+      - env
+      - ls -lR /opt
       - gem update --system
       - gem install bundler
       - bundle install 
