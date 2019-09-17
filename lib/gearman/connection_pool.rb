@@ -1,6 +1,7 @@
 require 'thread'
 
 module Gearman
+  # Comment
   class ConnectionPool
     include Logging
 
